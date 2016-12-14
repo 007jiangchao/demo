@@ -1,0 +1,257 @@
+body{
+    background: #f5f5f5;
+}
+
+#layout{
+    min-width:300px;
+    max-width:640px;
+    margin: 0 auto;
+    position: relative;
+}
+/*<!--收索-->*/
+#header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 999;
+}
+#header .header-box{
+    min-width:300px;
+    max-width:640px;
+    height: 40px;
+    background-color: rgba(201,21,35,0);
+    margin: 0 auto;
+    position:relative;
+}
+#header .icon-logo{
+    display: inline-block;
+    background-position:0 -103px;
+    width: 60px;
+    height: 36px;
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    z-index:1;
+}
+#header form{
+    width: 100%;
+    padding: 5px 80px 5px 75px;
+    position: relative;
+    top:0;
+    left: 0;
+}
+#header form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+#header .icon-search{
+    background-position:-60px -109px;
+    width: 20px;
+    height: 20px;
+    display:block;
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+#header .login{
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+/*  <!/--收索-->*/
+/*轮播图项目*/
+ #carousel{
+    width: 100%;
+    z-index:6;
+    overflow: hidden;
+     position: relative;
+}
+#carousel  ul:first-child{
+    width: 1000%;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+}
+#carousel ul:first-child li{
+    width: 10%;
+    float: left;
+}
+
+#carousel ul:first-child li img{
+    width: 100%;
+}
+/*轮播图中的小圆点*/
+
+#carousel li.active{background-color: #fff;}
+#carousel ul:last-child{
+    width: 90px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    bottom: 10px;
+    z-index: 20;
+}
+#carousel ul:last-child li{
+    width: 6px;
+    height: 6px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#carousel ul:last-child li+li{
+    margin-left:5px;
+}
+/*/轮播图项目*/
+/*导航栏*/
+#nav{
+    width:100%;
+    height:150px;
+    padding: 0 3.125%;
+    background-color:white;
+    border-bottom: 1px solid #bbbbbb;
+}
+#nav ul{
+    padding-top: 10px;
+    width: 100%;
+}
+#nav ul li{
+    width: 25%;
+    height:69px ;
+    float: left;
+}
+#nav ul li a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: block;
+}
+#nav ul li a img{
+    width: 40px;
+    height: 40px;
+    margin: 0  auto;
+}
+/*/导航栏*/
+/*商品区*/
+/*公共样式*/
+#main{
+    width: 100%;
+    padding: 0 5px;
+}
+#main .box{
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #bbb;
+    background-color: white
+}
+/*第一个块的内容*/
+#main .box .box-top{
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+#main .main-left{
+    float: left;
+}
+/*时钟*/
+#main .box .box-top .icon_time{
+    display: inline-block;
+    background-image: url("../img/seckill-icon.png");
+    background-size: 16px 20px;
+    width:16px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    float: left;
+}
+/*掌上秒杀*/
+#main .box .box-top .font{
+    font-weight: inherit;
+    padding-left: 30px;
+    padding-right: 10px;
+    color: red;
+    float: left;
+}
+/*时间*/
+#main .box .box-top .time{
+    float: left;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #333333;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 15px;
+    margin-top: 7px;
+    color: white;
+}
+/*时间的分割号*/
+#main .box .box-top .time-str{
+    float: left;
+    padding-left: 5px;
+}
+/*更多*/
+#main .main-right{
+    float: right;
+    padding-right: 10px;
+
+}
+
+#main .box .box-top-icon{
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    border-bottom: 1px solid #aaa;
+}
+
+#main .box .box-top-icon .font{
+    float: left;
+    font-size: 14px;
+    font-weight: inherit;
+}/*第一商品块*/
+#main section:nth-child(1)  .box-bottom{width: 100%; padding-top: 10px;}
+#main section:nth-child(1)  .box-bottom ul{width: 100%;}
+#main section:nth-child(1)  .box-bottom ul li{ width: 33.333%;float: left;}
+
+#main section:nth-child(1)  .box-bottom ul li a{ width: 100%;display:  block;text-align: center;}
+#main section:nth-child(1)  .box-bottom ul li a .set{width:100%;padding: 0 18%;}
+#main section:nth-child(1)  .box-bottom ul li a .set{border-left: 1px solid #bbb;}
+#main section:nth-child(1)  .box-bottom ul li a .nodorder {border-left:none;}
+#main section:nth-child(1)  .box-bottom ul li a .set img{width: 100%;}
+#main section:nth-child(1)  .box-bottom ul li a p:nth-of-type(1){color: red; padding-bottom: 15px;}
+#main section:nth-child(1)  .box-bottom ul li a p:nth-of-type(2){color: #222; padding-bottom: 15px;text-decoration:line-through;}
+
+#main .box .box-top-icon .font::before{
+
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 3px;
+    background-color:red;
+    margin: 0 5px 0 10px;
+}
+
+#main .box  .box-bottom {  width: 100%; }
+#main .box  .box-bottom img{width: 100%;}
+#main .box  .box-bottom a{width:100%; display: block;}
+#main .box  .box-bottom .offset-left{  float: left; }
+#main .box  .box-bottom .offset-right{ float: right; }
+#main .box  .box-bottom .bor-left{ border-left: 1px solid #aaa;}
+#main .box  .box-bottom .bor-right{border-right: 1px solid #aaa;}
+#main .box  .box-bottom .box-1{width: 50%;}
+#main .box  .box-bottom .box-2{width: 50%; height: 100%;}
+#main .box  .box-bottom .box-2 .prev{ width:100%; border-bottom: 1px solid #aaa;}
+#main .box  .box-bottom .box-2 .next{width: 100%;}
